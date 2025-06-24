@@ -12,21 +12,25 @@
 ```
 ## 🚀 Como Rodar?
 ```
-Certifique-se de que você tem o Java instalado (JDK 8 ou superior)
+Certifique-se de que você tem o Java instalado;
+(Preferencialmente, JDK 8 ou superior.)
 
-Salve o código como JogoDaVelhaGUI.java
+¹ Salve o código como:
+ JogoDaVelhaGUI.java
 
-Compile o codigo:
-
-
+¹ Compile o codigo:
 javac JogoDaVelhaGUI.java
-Run the game:
 
-
+¹ Rode o jogo:
 java JogoDaVelhaGUI
 ```
 ## 👨‍💻 Perfeito para:
 
-Aprender desenvolvimento de interfaces gráficas em Java
+Aprender desenvolvimento de interfaces gráficas em Java;<br>
+Praticar lógica, condicionais e programação orientada a eventos;<br>
 
-Praticar lógica, condicionais e programação orientada a eventos
+Para colaborações, contate-me nos links abaixo:<br>
+(For colaborations contact me in link below)<br>
+
+[![My Links](https://skillicons.dev/icons?i=gmail)](mailto:contato.antonyguilherme@gmail.com)
+[![My Links](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/antony-lins-354b91290/)
