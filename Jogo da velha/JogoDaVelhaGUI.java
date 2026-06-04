@@ -1,8 +1,9 @@
-import javax.swing.*;
+
 import java.awt.*;
-import java.awt.event.*;
+import javax.swing.*;
 
 public class JogoDaVelhaGUI extends JFrame {
+
     JButton[] botoes = new JButton[9];
     char jogadorAtual = 'X';
 
@@ -24,7 +25,9 @@ public class JogoDaVelhaGUI extends JFrame {
     }
 
     void jogar(int index) {
-        if (!botoes[index].getText().equals("")) return;
+        if (!botoes[index].getText().equals("")) {
+            return;
+        }
 
         botoes[index].setText(String.valueOf(jogadorAtual));
         if (verificaVitoria()) {
@@ -40,28 +43,33 @@ public class JogoDaVelhaGUI extends JFrame {
 
     boolean verificaVitoria() {
         int[][] combinacoes = {
-            {0,1,2}, {3,4,5}, {6,7,8},
-            {0,3,6}, {1,4,7}, {2,5,8},
-            {0,4,8}, {2,4,6}
+            {0, 1, 2}, {3, 4, 5}, {6, 7, 8},
+            {0, 3, 6}, {1, 4, 7}, {2, 5, 8},
+            {0, 4, 8}, {2, 4, 6}
         };
         for (int[] c : combinacoes) {
-            if (botoes[c[0]].getText().equals(String.valueOf(jogadorAtual)) &&
-                botoes[c[1]].getText().equals(String.valueOf(jogadorAtual)) &&
-                botoes[c[2]].getText().equals(String.valueOf(jogadorAtual)))
+            if (botoes[c[0]].getText().equals(String.valueOf(jogadorAtual))
+                    && botoes[c[1]].getText().equals(String.valueOf(jogadorAtual))
+                    && botoes[c[2]].getText().equals(String.valueOf(jogadorAtual))) {
                 return true;
+            }
         }
         return false;
     }
 
     boolean empate() {
-        for (JButton b : botoes)
-            if (b.getText().equals("")) return false;
+        for (JButton b : botoes) {
+            if (b.getText().equals("")) {
+                return false;
+            }
+        }
         return true;
     }
 
     void reiniciar() {
-        for (JButton b : botoes)
+        for (JButton b : botoes) {
             b.setText("");
+        }
         jogadorAtual = 'X';
     }
 
